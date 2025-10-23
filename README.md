@@ -43,6 +43,21 @@ source venv/bin/activate
 ---
 
 ## 🚀 Usage
+
 ### 2️⃣ Basic Scan
 ```bash  
 python3 endpoint_checker.py -t https://example.com -o report_week07
+
+---
+
+### 3️⃣ Advanced Scan
+```bash
+python3 endpoint_checker.py \
+  -t "https://example.com,https://sub.example.com" \
+  -o recon_results \
+  --crawl-depth 2 \
+  --concurrency 50 \
+  --timeout 8 \
+  -v
+
+
