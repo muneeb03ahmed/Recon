@@ -37,13 +37,12 @@ The tool is safe for authorized testing and designed for educational and researc
 ```bash
 git clone https://github.com/<your-repo-name>/recon-tool.git
 cd recon-tool
-
 python3 -m venv venv
-# Linux/macOS
 source venv/bin/activate
-# Windows
-# venv\Scripts\activate
 
-pip install -r requirements.txt
-# or
-pip install aiohttp lxml beautifulsoup4 jinja2
+---
+
+## 🚀 Usage
+### 2️⃣ Basic Scan
+```bash  
+python3 endpoint_checker.py -t https://example.com -o report_week07
